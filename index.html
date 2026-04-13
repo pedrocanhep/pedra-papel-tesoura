@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra, papel, tesoura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Pedra, papel e tesoura!</h1>
+
+  <button type="button" id="ver-placar" class="btn-see-score">Ver placar</button>
+
+  <div class="container-game-main">
+    <div class="container-player containers-game">
+      <h3>Você</h3>
+      <div class="base-emoji player-base-emoji">
+        <h4 class="emoji" id="player-emoji">✊</h4>
+      </div>
+    </div>
+    <span> vs </span>
+    <div class="container-computer containers-game">
+      <h3>Computador</h3>
+      <div class="base-emoji computer-base-emoji">
+        <h4 class="emoji" id="computer-emoji">✊</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-game-selection">
+    <button type="button" id="1" class="btn-selection">🤜Pedra</button>
+    <button type="button" id="2" class="btn-selection">✋Papel</button>
+    <button type="button" id="3" class="btn-selection">✌️Tesoura</button>
+  </div>
+
+  <div class="end-game" style="display: none;">
+    <h2 class="result">Você venceu!</h2>
+    <button type="button" id="restart-btn" class="btn-play-again">Jogar novamente</button>
+  </div>
+
+  <div class="placar" id="placar" style="display: none">
+    <div class="container-placar">
+      <h2>Placar</h2>
+      <p class="score">Você: <span id="score-player">0</span></p>
+      <p class="score">Computador: <span id="score-computer">0</span></p>
+      <p class="score">Empates: <span id="score-ties">0</span></p>
+      <button type="button" id="close-score" class="btn-close-score">Fechar placar</button>
+      <button type="button" id="reset-score" class="btn-reset-score">Resetar placar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
